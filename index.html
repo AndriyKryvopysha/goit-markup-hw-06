@@ -342,7 +342,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="foot-links-psn">
           <h3 class="foot-links-titel">присоединяйтесь</h3>
           <ul class="foot-links-list">
             <li>
@@ -377,11 +377,11 @@
         </div>
         <div class="subscribe-foot">
           <h3 class="foot-links-titel">подпишитесь на рассылку</h3>
-<form class="subsribe">
-  <label for="mail" class="form-label"></label>
-  <input type="email" class="form-input" name="mail" id="mail" placeholder="E-mail" />
-  <button type="submit">Подписаться</button>
-</form>
+          <form class="subscribe">
+            <label for="mail" class="form-label-subscribe"></label>
+            <input type="email" class="form-input-subscribe" name="mail" id="mail" placeholder="E-mail" />
+            <button class="form-button-subscribe" type="submit">Подписаться</button>
+          </form>
         </div>
       </div>
     </footer>
@@ -392,6 +392,35 @@
             <use href="./images/svg/sprite-modal.svg#icon-cross"></use>
           </svg>
         </button>
+        <form class="order-service-form">
+          
+          <div class="form-field">
+            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" placeholder="Иван Иваныч" autofocus />
+          </div>
+          
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
+          </div>
+          
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
+          </div>
+          
+          <div class="form-field">
+            <label for="comment">Коментарий</label>
+            <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Уточните детали доклада"></textarea>
+          </div>
+          
+          <div class="form-field">
+            <input type="checkbox" name="topic" value="html" id="html" />
+          <label for="html">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label></div>
+        
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
