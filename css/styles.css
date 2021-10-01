@@ -273,7 +273,7 @@ ul {
   opacity: 1;
   transform: translateY(0);
   transition-property: transform, opacity;
-  transition-duration: 2250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -304,7 +304,7 @@ ul {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   opacity: 0;
-  transition-duration: 2250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -735,9 +735,8 @@ footer {
 
 /*  ======Footer social links==== */
 
-.foot-links {
-  display: flex;
-  flex-direction: row;
+.foot-links-psn {
+  margin-right: 93px;
 }
 
 .foot-links-titel {
@@ -776,6 +775,28 @@ footer {
 
 .first {
   margin-left: 0px;
+}
+
+/*=======Subscribe form ======*/
+
+.form-input-subscribe {
+  width: 358px;
+  padding: 15px 16px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-input-subscribe:focus {
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.form-button-subscribe {
+  display: flex;
+  width: ;
 }
 
 /* =======MODAL======= */
