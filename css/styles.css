@@ -607,13 +607,16 @@ ul {
   align-items: center;
   height: 92px;
   width: 170px;
-  margin-left: 30px;
   border: 1px #afb1b8 solid;
   border-radius: 4px;
   color: #afb1b8;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-number:not(:first-child) {
+  margin-left: 30px;
 }
 
 .clients-link:hover,
@@ -860,6 +863,7 @@ footer {
   left: 50%;
   width: 528px;
   height: auto;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
@@ -867,8 +871,8 @@ footer {
 
 .close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -877,8 +881,6 @@ footer {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin-top: 8px;
-  margin-right: 8px;
   padding: 0px;
   cursor: pointer;
   transition-property: fill;
@@ -902,13 +904,12 @@ footer {
   justify-content: center;
   align-items: center;
   width: 448px;
-  margin: 40px auto;
 }
 
 .form-field-titel {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -918,16 +919,16 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.form-field {
+.form-field:nth-child(-n + 4) {
   position: relative;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .form-label {
-  position: absolute;
-  top: -18px;
-  left: 0;
+  display: block;
   width: 100%;
+  margin-bottom: 4px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -938,7 +939,7 @@ footer {
 
 .form-icon {
   position: absolute;
-  top: 11px;
+  bottom: 11px;
   left: 12px;
   transition-property: fill;
   transition-duration: 250ms;
@@ -958,7 +959,7 @@ footer {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
-  margin-bottom: 28px;
+
   cursor: pointer;
   outline: transparent;
   transition-property: border;
@@ -980,11 +981,16 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-field-comment {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .comment {
   resize: none;
   width: 100%;
   padding: 12px 16px;
-  margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -1006,6 +1012,11 @@ footer {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field-agree {
+  position: relative;
+  width: 100%;
 }
 
 .checkbox {
@@ -1051,6 +1062,7 @@ footer {
 }
 
 .agree-link {
+  margin-left: 5px;
   color: #2196f3;
   text-decoration: underline;
 }
